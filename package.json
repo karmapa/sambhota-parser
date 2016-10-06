@@ -2,7 +2,7 @@
   "name": "sambotha-parser",
   "version": "0.0.1",
   "description": "sambotha parser",
-  "main": "src/parse.js",
+  "main": "src/parser.js",
   "scripts": {
     "test": "mocha"
   },
