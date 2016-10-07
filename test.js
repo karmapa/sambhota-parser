@@ -9,7 +9,6 @@ describe('convert', function () {
     var correct = '༄༅། །དཀར་མཛེས་ཨ་ཡིག་ལས་འཁྲུངས་ཤེས་བློའི་གཏེར། །ཕས་རྒོལ་ཝ་སྐྱེས་ཟིལ་གནོན་གདོང་ལྔ་བཞིན། །ཆགས་ཐོགས་ཀུན་བྲལ་མཚུངས་མེད་འཇམ་དབྱངས་མཐུས། །མ་ཧཱ་མཁས་པའི་གཙོ་བོ་ཉིད་གྱུར་ཅིག །ཅེས་པ་འདི་ཉིད་ཤིན་ཏུ་གྲགས་པའི་དབྱངས་ཚིག་གོ །';
     var zip = new JSZip(data);
     var xml = zip.file("word/document.xml").asText();
-    console.log(parser);
     var doc = parser.docxToJson(xml)
     parser.toUnicode(doc)
     data = parser.jsonToHtml(doc)
