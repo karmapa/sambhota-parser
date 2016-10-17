@@ -160,10 +160,6 @@ function dedrisIdFromName(a, b, c) {
 	}
 }
 
-if (!(typeof dedris !== 'undefined')) {
-	eval(fs.readFileSync('table.js').toString());
-}
-
 function removeFonts(doc) {
 	// remove Sambotha fonts from font table
 	// update references in text flow
