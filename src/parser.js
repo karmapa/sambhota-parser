@@ -127,12 +127,12 @@ if (typeof(module) !== 'undefined') { //node
 	module.exports.docxToJson = parse;
 	module.exports.jsonToHtml = toHtml;
 	module.exports.docxToXml = docxToXml;
-	module.exports.HTMLtoText = leaveHTML;
+	module.exports.HTMLToText = leaveHTML;
 } else { // browser
 	window.docxToJson = parse;
 	window.jsonToHtml = toHtml;
 	window.docxToXml = docxToXml;
-	window.HTMLtoText = leaveHTML;
+	window.HTMLToText = leaveHTML;
 }
 
 

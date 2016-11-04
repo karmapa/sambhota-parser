@@ -11,7 +11,7 @@ describe('convert', function () {
     var doc = parser.docxToJson(xml);
     parser.toUnicode(doc);
     data = parser.jsonToHtml(doc);
-    data = parser.HTMLtoText(data);
+    data = parser.HTMLToText(data);
     var result = data.match(correct);
     assert.equal(result, correct);
   });
