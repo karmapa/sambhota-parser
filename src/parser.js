@@ -118,14 +118,21 @@ function docxToXml(data) {
 	return xml;
 }
 
+function leaveHTML (str) {
+	var data = str.replace(/<p.+?>/g, '\n').replace(/&nbsp;/g, ' ').replace(/<.+?>/g, '').replace(/^\r?\n/g, '');
+	return data;
+}
+
 if (typeof(module) !== 'undefined') { //node
 	module.exports.docxToJson = parse;
 	module.exports.jsonToHtml = toHtml;
 	module.exports.docxToXml = docxToXml;
+	module.exports.HTMLtoText = leaveHTML;
 } else { // browser
 	window.docxToJson = parse;
 	window.jsonToHtml = toHtml;
 	window.docxToXml = docxToXml;
+	window.HTMLtoText = leaveHTML;
 }
 
 
