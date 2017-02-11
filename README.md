@@ -1,7 +1,7 @@
-# sambotha-parser
-[![Build Status](https://travis-ci.org/karmapa/sambotha-parser.svg?branch=master)](https://travis-ci.org/karmapa/sambotha-parser)
+# sambhota-parser
+[![Build Status](https://travis-ci.org/karmapa/sambhota-parser.svg?branch=master)](https://travis-ci.org/karmapa/sambhota-parser)
 
-convert sambotha(.docx file) into tibetan
+convert sambhota(.docx file) into tibetan
 output will be like html tag
 
 ```
